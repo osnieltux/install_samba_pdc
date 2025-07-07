@@ -17,3 +17,8 @@ without sudo
   - *set your \<domain> and \<IP>*
   - *change you administrator password*
   - *delete PASSWORD.txt (contains the randomly generated password)*
+
+#### Some recommended projects
+  - https://github.com/Macmod/godap
+  - https://www.ldap-account-manager.org/lamcms/
+  - https://ltb-project.org/
