@@ -80,11 +80,15 @@ check_code $? "Unmask smbd nmbd winbind"
 systemctl enable --now  samba-ad-dc
 check_code $? "Enabling && starting  samba-ad-dc"
 
-systemctl stop systemd-resolved
-check_code $? "Stop systemd-resolved"
-
-systemctl disable systemd-resolved
-check_code $? "disable systemd-resolved"
+# checking  systemd-resolved
+if systemctl list-unit-files | grep -q '^systemd-resolved.service'; then
+    if systemctl is-active --quiet systemd-resolved.service; then
+        systemctl stop systemd-resolved
+        check_code $? "Stop systemd-resolved"
+    fi
+    systemctl disable systemd-resolved
+    check_code $? "disable systemd-resolved"
+fi
 
 unlink /etc/resolv.conf
 check_code $? "Unlink /etc/resolv.conf"
