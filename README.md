@@ -15,5 +15,5 @@ without sudo
 **Remember to:**
   
   - *set your \<domain> and \<IP>*
-  - *change you administrator passord*
+  - *change you administrator password*
   - *delete PASSWORD.txt (contains the randomly generated password)*
