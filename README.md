@@ -10,7 +10,7 @@ without sudo
 
       curl -fsSL https://raw.githubusercontent.com/osnieltux/install_samba_pdc/refs/heads/main/install_samba_pdc.sh -o /tmp/script.sh && bash /tmp/script.sh <your_domain> <your_ipv4>
 
-**If you are using an LXC it must be unprivileged and set DNS manually.**
+**If you are using an LXC it must be privileged and set DNS manually.**
 
 **Remember to:**
   
