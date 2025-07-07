@@ -22,3 +22,6 @@ without sudo
   - https://github.com/Macmod/godap
   - https://www.ldap-account-manager.org/lamcms/
   - https://ltb-project.org/
+
+### TODO
+- Improve exit codes
