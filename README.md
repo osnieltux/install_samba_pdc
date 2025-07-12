@@ -1,5 +1,5 @@
 ## install_samba_pdc
-#### Simple script for creating a local domain in Samba on Ubuntu
+#### Simple script for creating a local domain in Samba on Denian & Ubuntu
 
 if you are using **Ubuntu** or **Debian** with sudo
   
